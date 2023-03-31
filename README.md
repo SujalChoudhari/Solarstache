@@ -38,14 +38,16 @@ yarn add @sujalchoudhari/solarstache
 
 ## Usage
 ```ts
-import { Solarstache } from 'path/to/solarstache';
+var {Solarstache} = require("@sujalchoudhari/solarstache");
+// OR import { Solarstache } from "@sujalchoudhari/solarstache";
+
 
 const view = {
   title: "Sujal",
   calc: "$100"
 };
 
-const output = Solarstache.render("<<=title>> spends <<calc>>", view);
+const output = Solarstache.render("<<=props.title>> spends <<props.calc>>", view);
 ```
 
 In this example, the `view` object is passed to the `render` function.
@@ -54,19 +56,19 @@ The `view` object is used to replace the variables in the template.
 ## Syntax
 The syntax of Solarstache is very simple.
 It is mix of Mustache and Html.
-For accessing the variables, you can use `<<= varname>>`
-For running javascript code, you can use `<< code >>`
+For accessing the variables, you can use `<<= props.varname>>`
+For running javascript code, you can use `<< props.code >>`
 
 Thats it. Thats the whole syntax.
 
 ## Example
 ```ts
 const template = `
-    <h1><<= title >></h1>
-    <p><<= calc >></p>
+    <h1><<= props.title >></h1>
+    <p><<= props.calc >></p>
     <p>
         << for(let i = 1; i <= 10; i++) { >> 
-            <<= i >> Sheep
+            <<= props.i >> Sheep
         << } >>
     </p>
 `;
@@ -110,15 +112,15 @@ Solarstache.javascriptDelimiter = ["{%", "%}"];
 Solaris by default caches the templates.
 You can manually cache the templates by using the `parse` function.
 ```ts
-const template = Solarstache.parse("<<= title >>");
+const template = Solarstache.parse("<<= props.title >>");
 ``` 
 `parse` returns a function to render with props, also caches the template.
 This cached template can be used to render multiple times.
 ```ts
 Solarstache.parse("<<= title >>"); // Caches the template
 
-const output1 = Solarstache.render("<<= title >>", { title: "Sujal" }); // Uses the cached template
-const output2 = Solarstache.render("<<= title >>", { title: "Choudhari" }); // Uses the cached template
+const output1 = Solarstache.render("<<= props.title >>", { title: "Sujal" }); // Uses the cached template
+const output2 = Solarstache.render("<<= props.title >>", { title: "Choudhari" }); // Uses the cached template
 // Improves performance
 
 ```

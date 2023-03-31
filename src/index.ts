@@ -11,7 +11,7 @@ import * as fs from "fs";
  * The code of the Solarstache is inspired from the [article](https://medium.com/wdstack/understanding-javascript-micro-templating-f37a37b3b40e).
  * @author Sujal Choudhari <sjlchoudhari@gmail.com>
  */
-export default class Solarstache {
+export class Solarstache {
     /**
      * Variable Delimiter - Default: ["<<=", ">>"]
      */
@@ -116,3 +116,4 @@ export default class Solarstache {
 
 
 }
+export default Solarstache;
