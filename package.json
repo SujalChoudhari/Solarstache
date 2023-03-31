@@ -1,6 +1,6 @@
 {
   "name": "@sujalchoudhari/solarstache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Template Engine written in Typescript",
   "main": "dist/index.js",
   "types": "index.d.ts",
@@ -19,9 +19,9 @@
   "author": "Sujal Choudhari <sjlchoudhari@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.2",
-    "@types/node": "^18.15.11"
+    "typescript": "^5.0.2"
   }
 }
