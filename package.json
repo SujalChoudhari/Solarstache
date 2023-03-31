@@ -1,21 +1,27 @@
 {
-  "name": "solarstache",
+  "name": "@sujalchoudhari/solarstache",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A Template Engine written in Typescript",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/SujalChoudhari/Solarstache.git",
+  "keywords": [
+    "html",
+    "engine",
+    "template",
+    "templating",
+    "solarstache"
+  ],
   "scripts": {
-    "dev": "ts-node-dev index.ts",
+    "dev": "ts-node-dev src/index.ts",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Sujal Choudhari <sjlchoudhari@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.2"
-  },
-  "dependencies": {
+    "typescript": "^5.0.2",
     "@types/node": "^18.15.11"
   }
 }

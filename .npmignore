@@ -1,0 +1,4 @@
+## Npm ignore for a ts project
+/src/
+/tsconfig.json
+

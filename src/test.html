@@ -1,0 +1,9 @@
+<div>
+    <h1>Hello, <<= props.name>>!</h1>
+    <h2>Here is a list of your friends:</h2>
+    <ul>
+        << props.friends.forEach(friend => { >>
+            <li><<= friend.name >></li>
+        << }) >>
+    </ul>
+</div>
