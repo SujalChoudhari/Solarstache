@@ -23,6 +23,18 @@ OR
 Copy the `index.js` file from the `dist` folder. (for javascript)
 Copy the `index.ts` file from the `src` folder. (for typescript)
 
+OR
+
+Install it using npm
+```bash
+npm i @sujalchoudhari/solarstache
+```
+
+OR 
+Install it using yarn
+```bash
+yarn add @sujalchoudhari/solarstache
+```
 
 ## Usage
 ```ts
