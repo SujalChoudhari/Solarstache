@@ -1,19 +1,25 @@
-Solarstache
-===========
-Solarstache is a zero dependency Templating engine for Typescript.
-Ti is a logic-based, meaning that it is not based on a template language like Handlebars or Mustache.
-But it is based on a logic language like Javascript. YOu can write javascript code to impliment logic.
 
-Because of direct js code, the processing is faster than other template engines.
 
-The code of the Solarstache is inspired from the [article](https://medium.com/wdstack/understanding-javascript-micro-templating-f37a37b3b40e).
+
+# Solarstache
+
+Solarstache is a zero-dependency templating engine for TypeScript. It's a logic-based engine that's not based on a template language like Handlebars or Mustache, but rather on a logic language like JavaScript. With Solarstache, you can write JavaScript code to implement logic, making it a perfect choice for developers who prefer direct code implementation.
+
+Because of the direct JavaScript code implementation, processing with Solarstache is faster than other template engines. (Yeah, that's right, it's faster than a rocket-powered cheetah!)
+
+The code for Solarstache was inspired by an article that was written on a sunny day by a programmer with a great mustache. (That's right, we take mustaches very seriously around here!)
+
 ## Where can I use it?
-Solarstache is a minimalistic template engine. 
-It is not a full-fledged framework. 
-It is a tool that can be used in any framework or library.
 
-When you need some templating functionality, but dont want to use an entire templating framework with large code base, 
-Solarstache is the right choice.
+Solarstache is a minimalistic template engine, which means it's not a full-fledged framework. It's a tool that can be used in any framework or library. Whether you're building an app in React, Angular, Vue, or any other framework, Solarstache can be easily integrated with your existing codebase.
+
+When you need some templating functionality but don't want to use an entire templating framework with a large code base (we all have been there, right?), Solarstache is the right choice. It's like a Swiss Army knife for your templating needs, compact and efficient.
+
+So, why settle for less when you can have Solarstache in your toolkit? Try it out today! (Your mustache will thank you for it!)
+
+
+
+
 
 ## Installation
 Download the [Repository](https://github.com/SujalChoudhari/Solarstache.git)
